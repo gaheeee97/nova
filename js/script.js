@@ -68,16 +68,21 @@ document.querySelectorAll('.buy-now').forEach(button => {
     });
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOMContentLoaded event fired");
     const slideElements = document.querySelectorAll('.fade-slide');
 
     const slideInOnScroll = () => {
+        console.log("slideInOnScroll function called");
         slideElements.forEach(element => {
             const rect = element.getBoundingClientRect();
             if (rect.top < window.innerHeight && rect.bottom > 0) {
                 element.classList.add('visible');
+                console.log("Element made visible:", element);
             } else {
                 element.classList.remove('visible');
+                console.log("Element hidden:", element);
             }
         });
     };
