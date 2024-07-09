@@ -127,6 +127,7 @@ h1.logo img {
 #banner1 {
     width: 1920px;
     height: 900px;
+    padding-top: 150px;
 }
 
 #banner2 {
@@ -293,13 +294,22 @@ h1.logo img {
     padding-top: 100px;
 }
 
-.video img {
-    width: 960px;
+.video_position {
+    display: flex;
+    justify-content: space-between;
 }
 
 .video_wrap {
     display: flex;
+    width: 100%;
 }
+
+
+.video_wrap li img {
+    width: 100%;
+    height: auto;
+}
+
 
 #event {
     width: 1320px;
@@ -339,10 +349,12 @@ h1.logo img {
     transform: translateX(0);
 }
 
-#banner3 img {
-    width: 100%;
+#banner3 {
+    width: 1920px;
+    margin: 0 auto;
     height: 520px;
-    padding: 100px 0;
+    padding: 50px 0;
+    background: url(../images/main/banner_last.png) no-repeat;
     border: 5px solid transparent;
     /* 초기 보더 상태를 투명으로 설정 */
 }
