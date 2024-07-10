@@ -47,6 +47,7 @@ body {
     font-size: 12px;
     line-height: 22px;
     background-color: black;
+    padding-top: 150px;
 }
 
 h2 {
@@ -57,7 +58,7 @@ h2 {
 }
 
 #wrap {
-    min-width: 1320px;
+    min-width: 1400px;
 }
 
 * {
@@ -126,16 +127,19 @@ h1.logo img {
 
 
 #banner1 {
-    margin-top: 100px;
-    width: 1920px;
     height: 745px;
-
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
 }
 
 #banner1 img {
-    width: 100%;
+    width: 1920px;
     display: block;
-
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -960px;
 }
 
 #banner2 {
@@ -217,8 +221,8 @@ h1.logo img {
 
 .shop_wrap li {
     width: 330px;
-    position: relative;
-    /* 상대 위치 지정 */
+    display: flex;
+    justify-content: center;
 }
 
 .shop_wrap li img {
@@ -295,9 +299,9 @@ h1.logo img {
 }
 
 #video {
+    width: 1320px;
     padding: 60px 0;
     text-align: center;
-    width: 1920px;
     margin: 0 auto;
     padding-top: 100px;
 }
@@ -358,11 +362,11 @@ h1.logo img {
 }
 
 #banner3 {
-    width: 1920px;
+
     margin: 0 auto;
     height: 520px;
     padding: 50px 0;
-    background: url(../images/main/banner_last.png) no-repeat;
+    background: url(../images/main/banner_last.png) no-repeat center;
     border: 5px solid transparent;
     /* 초기 보더 상태를 투명으로 설정 */
 }
