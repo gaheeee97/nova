@@ -124,10 +124,18 @@ h1.logo img {
     width: 100px;
 }
 
+
 #banner1 {
+    margin-top: 100px;
     width: 1920px;
-    height: 900px;
-    padding-top: 150px;
+    height: 745px;
+
+}
+
+#banner1 img {
+    width: 100%;
+    display: block;
+
 }
 
 #banner2 {
