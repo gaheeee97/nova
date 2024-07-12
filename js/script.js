@@ -90,3 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', slideInOnScroll);
     slideInOnScroll(); // 페이지 로드 시 초기화
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.querySelector(".sub2_banner1 ul");
+    let currentIndex = 0;
+
+    function slide() {
+        currentIndex = (currentIndex + 1) % 2; // 0 또는 1로 변환
+        const transformValue = -currentIndex * 1920; // 슬라이드할 픽셀 값 계산
+        banner.style.transform = `translateX(${transformValue}px)`;
+    }
+
+    setInterval(slide, 4000); // 3초마다 슬라이드
+});
