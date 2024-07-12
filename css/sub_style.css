@@ -116,6 +116,10 @@ a {
     display: flex;
 }
 
+.util li {
+    padding-right: 20px;
+}
+
 h1.logo {
     text-align: center;
 }
@@ -130,6 +134,7 @@ h1.logo img {
     justify-content: space-between;
     width: 1320px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .left_box {
@@ -143,6 +148,7 @@ h1.logo img {
 
 .img_box img {
     display: block;
+    box-sizing: border-box;
 }
 
 
@@ -160,13 +166,14 @@ h1.logo img {
 
 .left_box .img_box img {
     padding-left: 100px;
+
 }
 
 #banner {
     height: 745px;
     position: relative;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 #banner img {
@@ -195,6 +202,11 @@ strong {
     padding-top: 100px;
 }
 
+.section3_wrap li img:hover {
+    box-shadow: 0 0 10px 5px white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
 #section4 {
     height: 745px;
     position: relative;
@@ -211,61 +223,27 @@ strong {
     margin-left: -650px;
 }
 
+.rotate-on-hover {
+    overflow: hidden;
+    transition: transform 1s;
+}
 
+/* 호버할 때 애니메이션 적용 */
+.rotate-on-hover:hover {
+    animation: rotate 1.8s linear infinite;
+    /* 애니메이션 설정 */
+}
 
+/* 애니메이션 키프레임 */
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    to {
+        transform: rotateY(360deg);
+    }
+}
 
 
 
