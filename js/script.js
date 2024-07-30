@@ -103,3 +103,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(slide, 4000); // 3초마다 슬라이드
 });
+
+
+
+function toggleContent(element) {
+    var notification = element.parentElement;
+    var content = notification.querySelector('.content, .content1, .content2');
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+
+function closeContent(event, element) {
+    event.stopPropagation();
+    var content = element.closest('.content,.content2, .content1');
+    content.style.display = 'none';
+}
