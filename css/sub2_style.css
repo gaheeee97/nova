@@ -173,11 +173,11 @@ h1.logo img {
     margin: 20px;
     width: 330px;
     box-sizing: border-box;
+    padding-bottom: 10px;
 }
 
 .product-item img {
-    width: 100%;
-    border-radius: 10px;
+    width: 90%;
 }
 
 
@@ -206,19 +206,19 @@ h1.logo img {
 
 .product-item:hover img {
     transform: scale(1.1);
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
 .name {
-    font-size: 22PX;
+    font-size: 20PX;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 20px 0;
     font-family: 'ONE-Mobile-Regular';
 }
 
 
 #foter {
-    padding: 20px 0;
+    padding: 10px 0;
     font-family: 'ONE-Mobile-Regular';
     color: #fff;
     font-size: 12px;
