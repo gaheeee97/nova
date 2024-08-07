@@ -128,28 +128,20 @@ h1.logo img {
     width: 100px;
 }
 
-.sub2_banner1 {
-    overflow: hidden;
-    padding-top: 100px;
+#slide {
     margin: 0 auto;
-    width: 1920px;
-    height: 800px;
+    overflow: hidden;
+    padding: 100px 0;
 }
 
-.sub2_banner1 ul {
+#slide ul {
     display: flex;
-    transition: transform 1s ease-in-out;
 }
-
-
-.sub2_banner1 ul li img {
-    display: block;
-}
-
 
 .line {
     text-align: center;
-    padding-bottom: 50px;
+    padding: 140px 0;
+    background: url(../images/shop/line.png)no-repeat;
 }
 
 .container {
@@ -159,7 +151,7 @@ h1.logo img {
 }
 
 .title {
-    font-size: 2.5em;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -182,7 +174,7 @@ h1.logo img {
 
 
 .price {
-    font-size: 16px;
+    font-size: 14px;
     color: #f39c12;
     padding-bottom: 10px;
 
@@ -193,7 +185,7 @@ h1.logo img {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 12px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -210,7 +202,7 @@ h1.logo img {
 }
 
 .name {
-    font-size: 20PX;
+    font-size: 16PX;
     font-weight: bold;
     padding: 20px 0;
     font-family: 'ONE-Mobile-Regular';
@@ -271,6 +263,6 @@ h1.logo img {
 }
 
 .left-section p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 25px;
 }

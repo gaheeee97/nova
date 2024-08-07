@@ -8,35 +8,24 @@ document.addEventListener("scroll", function() {
         if (lineTop < triggerHeight) {
             setTimeout(() => {
                 line.classList.add('show');
-            }, index * 500); // 각 라인에 500ms 간격으로 지연시간을 줌
+            }, index * 500); 
         } else {
             setTimeout(() => {
                 line.classList.remove('show');
-            }, index * 500); // 각 라인에 500ms 간격으로 지연시간을 줌
+            }, index * 500); 
         }
     });
 });
-document.addEventListener('DOMContentLoaded', () => {
-    const slide = document.querySelector('#slide ul');
-    const clone = slide.innerHTML;
-    slide.innerHTML += clone; // Duplicate the slide content for seamless transition
-
-    const totalWidth = slide.offsetWidth / 2;
-
-    let currentX = 0;
-    const speed = 1; // Adjust speed as needed
-
-    function animate() {
-        currentX -= speed;
-        if (currentX <= -totalWidth) {
-            currentX = 0;
-        }
-        slide.style.transform = `translateX(${currentX}px)`;
-        requestAnimationFrame(animate);
-    }
-
-    animate();
-});
+setInterval(function(){
+    $("#slide ul").delay(2000);
+    $("#slide ul").animate({
+        marginLeft:'-1920px'
+    })
+    $("#slide ul").delay(2000);
+    $("#slide ul").animate({
+        marginLeft:'0px'
+    })
+})
 
 document.addEventListener('DOMContentLoaded', function() {
     var listItems = document.querySelectorAll('.team_wrap li');
