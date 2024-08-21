@@ -282,7 +282,8 @@ h1.logo img {
 }
 
 .buy-now:hover {
-    background-color: #c0392b;
+    background-color: #f8ad13;
+    color: #333;
 }
 
 
