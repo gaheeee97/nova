@@ -92,6 +92,7 @@ a {
 .inner_header {
     width: 1320px;
     margin: auto;
+    font-size: 15px;
 }
 
 .top {
